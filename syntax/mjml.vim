@@ -12,7 +12,6 @@ syntax keyword htmlTagName contained mj-chart mj-qr-code mjml-msobutton
 
 syntax match   htmlArg     contained /\k\+=\@=/
 
-syntax include @htmlCss syntax/css.vim
 syntax region cssMjStyle start=+<mj-style>+ keepend end=+</mj-style>+ contains=@htmlCss,htmlTag,htmlEndTag,htmlCssStyleComment,@htmlPreproc
 
 let b:current_syntax = 'mjml'
